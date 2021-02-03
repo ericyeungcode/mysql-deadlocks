@@ -2,7 +2,7 @@ version: '2.1'
 services:
     dldb:
         container_name: dldb
-        image: mysql:5.7
+        image: mysql:5.7.23
         volumes:
          - ./db:/docker-entrypoint-initdb.d
          - ./conf/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
